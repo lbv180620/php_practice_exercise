@@ -1,4 +1,4 @@
-const { src, dest, watch } = require('gulp');
+const { watch } = require('gulp');
 const browserSync = require('browser-sync').create();
 
 const startServer = () => {
