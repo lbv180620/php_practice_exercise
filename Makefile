@@ -135,6 +135,7 @@ chown-mysql:
 	docker-compose exec db bash -c 'chown -R mysql:mysql /var/lib/mysql'
 # git
 git:
+	@make chown
 	git add .
 	git commit -m "fix"
 	git push origin
