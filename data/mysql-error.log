@@ -90,3 +90,29 @@
 2021-09-07T07:36:27.549180+09:00 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
 2021-09-07T07:36:27.966340+09:00 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
 2021-09-07T07:36:27.966397+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.26'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-09-08T08:03:42.513990+09:00 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.26).
+2021-09-08T08:03:43.781390+09:00 0 [ERROR] [MY-011945] [InnoDB] Cannot open '/var/lib/mysql/ib_buffer_pool.incomplete' for writing: Permission denied
+2021-09-08T08:03:44.689142+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_1.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691640+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_2.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691663+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_3.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691673+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_4.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691681+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_5.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691690+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_6.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691698+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_7.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691707+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_8.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691715+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_9.ibt' permission error, can't delete!
+2021-09-08T08:03:44.691724+09:00 0 [Warning] [MY-012573] [InnoDB] './#innodb_temp/temp_10.ibt' permission error, can't delete!
+2021-09-08T08:03:46.011719+09:00 0 [ERROR] [MY-012592] [InnoDB] Operating system error number 1 in a file operation.
+2021-09-08T08:03:46.013749+09:00 0 [ERROR] [MY-012596] [InnoDB] Error number 1 means 'Operation not permitted'
+2021-09-08T08:03:46.016124+09:00 0 [ERROR] [MY-012646] [InnoDB] File ./ibtmp1: 'delete' returned OS error 101.
+2021-09-08T08:03:46.094422+09:00 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.26)  MySQL Community Server - GPL.
+2021-09-08T10:22:15.974271+09:00 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.26) starting as process 1
+2021-09-08T10:22:16.005535+09:00 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-09-08T10:22:16.554976+09:00 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-09-08T10:22:16.900290+09:00 0 [Warning] [MY-013746] [Server] A deprecated TLS version TLSv1 is enabled for channel mysql_main
+2021-09-08T10:22:16.900414+09:00 0 [Warning] [MY-013746] [Server] A deprecated TLS version TLSv1.1 is enabled for channel mysql_main
+2021-09-08T10:22:16.909277+09:00 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-09-08T10:22:16.909478+09:00 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2021-09-08T10:22:16.913283+09:00 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-09-08T10:22:16.965866+09:00 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+2021-09-08T10:22:16.965917+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.26'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
