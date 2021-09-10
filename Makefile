@@ -137,8 +137,11 @@ chown-mysql:
 git:
 	@make chown
 	git add .
-	git commit -m "fix"
+	git commit -m "$(msg)"
 	git push origin
+	export $(msg)='fix'
+git-msg:
+	env | grep "msg"	
 # link
 link:
 	source
