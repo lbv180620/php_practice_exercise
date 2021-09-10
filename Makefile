@@ -139,7 +139,6 @@ git:
 	git add .
 	git commit -m "$(msg)"
 	git push origin
-	bash -c 'export -n msg'
 git-msg:
 	env | grep "msg"	
 # link
