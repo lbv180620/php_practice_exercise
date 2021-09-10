@@ -139,7 +139,7 @@ git:
 	git add .
 	git commit -m "$(msg)"
 	git push origin
-	export $(msg)='fix'
+	export -n $($msg)
 git-msg:
 	env | grep "msg"	
 # link
