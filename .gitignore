@@ -66,3 +66,6 @@ vendor/
 
 # yarn
 node_modules/
+
+# vscode
+.vscode/
