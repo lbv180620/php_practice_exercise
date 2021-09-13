@@ -15,7 +15,7 @@ $dsn = "mysql:dbname = {$dbname};host={$host};charset=utf8";
 
 $driver_opts = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_EMULATE_PREPARES => true,
+    PDO::ATTR_EMULATE_PREPARES => false,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
 ];
 
@@ -47,5 +47,5 @@ try {
     header('Content-Type: text/plain; charset=UTF-8', true, 500);
     exit($e->getMessage() . PHP_EOL);
 } finally {
-    unset($dsn);
+    $dsn = null;
 }
