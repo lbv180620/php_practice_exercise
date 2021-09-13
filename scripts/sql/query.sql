@@ -1,16 +1,15 @@
 create database php_work;
 
-show database;
+show databases;
 
 use php_work;
 
 create table todo_items (
-    id int auto_increment not null primary key,
+    id int not null auto_increment,
     expiration_date date not null,
     todo_item varchar(100) not null,
     is_completed tinyint default 0 not null,
-)
-default charset=utf8mb4_general_ci
-;
+    primary key(id)
+    )default charset=utf8mb4 collate=utf8mb4_general_ci;
 
 show tables;
