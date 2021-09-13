@@ -63,3 +63,6 @@ fabric.properties
 
 # Composer
 vendor/
+
+# yarn
+node_modules/
