@@ -140,7 +140,7 @@ git:
 	git commit -m "$(msg)"
 	git push origin
 git-msg:
-	env | grep "msg"	
+	env | grep "msg"
 # link
 link:
 	source

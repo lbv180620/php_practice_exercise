@@ -26,7 +26,7 @@ try {
     echo 'Connected!' . PHP_EOL;
     // $stmt = $dbh->prepare($sql);
     // $stmt->execute();
-    $dbh->query("create database php_work;");
+    $dbh->query("create database if not exists php_work;");
     $dbh->query("use php_work;");
     $dbh->query("
         create table todo_items (

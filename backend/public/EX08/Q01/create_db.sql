@@ -1,4 +1,4 @@
-create database php_work;
+create database if not exists php_work;
 
 show databases;
 
