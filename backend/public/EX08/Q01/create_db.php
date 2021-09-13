@@ -35,7 +35,7 @@ try {
             todo_item varchar(100) not null,
             is_completed tinyint default 0 not null,
             primary key(id)
-            )default charset=utf8mb4 collate=utf8mb4_general_ci;
+            ) engine=innodb default charset=utf8mb4 collate=utf8mb4_general_ci;
     ");
     $stmt = $dbh->query('describe todo_items;');
     $res = $stmt->fetchAll();
@@ -44,7 +44,7 @@ try {
     }
 } catch (PDOException $e) {
     echo 'Connection Failed!' . PHP_EOL;
-    header('Content-Type: text/plain; charset=UTF-8', true, 500);
+    //header('Content-Type: text/plain; charset=UTF-8', true, 500);
     exit($e->getMessage() . PHP_EOL);
 } finally {
     $dsn = null;

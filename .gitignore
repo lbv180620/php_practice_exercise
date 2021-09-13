@@ -73,3 +73,6 @@ node_modules/
 #OS
 Thumb.db
 .DS_Store
+
+# MySQL
+/data
