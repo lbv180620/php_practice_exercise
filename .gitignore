@@ -69,3 +69,7 @@ node_modules/
 
 # vscode
 .vscode/
+
+#OS
+Thumb.db
+.DS_Store
