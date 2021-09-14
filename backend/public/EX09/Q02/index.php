@@ -8,7 +8,7 @@ if (isset($_SESSION['error'])) {
     $msg = $_SESSION['error']['msg'];
     $date = $_SESSION['error']['date'];
 } else {
-    $msg = "";
+    $msg = '';
 
     $dt = new DateTime('now', new DateTimeZone('Asia/Tokyo'));
     $date = $dt->format('Y/m/d');

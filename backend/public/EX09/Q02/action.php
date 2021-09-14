@@ -15,14 +15,14 @@ try {
 } catch (Exception $e) {
     $_SESSION['error']['msg'] = $e->getMessage();
     $_SESSION['error']['date'] = $_POST['date'];
-    header('Location: ./', true, 301);
+    header('Location: ./');
     exit;
 }
 
-function isDate($str)
+function isDate($date)
 {
-    $d = explode('/', $str);
-    return checkdate($d[1], $d[2], $d[0]);
+    list($Y, $m, $d) = explode('/', $date);
+    return checkdate($m, $d, $Y);
 }
 
 ?>
