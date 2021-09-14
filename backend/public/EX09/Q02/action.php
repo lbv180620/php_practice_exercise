@@ -9,8 +9,10 @@ if (isset($_SESSION['error'])) {
 }
 
 try {
-    if (!isDate($_POST['date'])) {
+    if (!strptime($_POST['date'], '%Y/%m/%d')) {
         throw new Exception('日付の形式が正しくありません');
+    } elseif (!isDate($_POST['date'])) {
+        throw new Exception('存在しない日付です');
     }
 } catch (Exception $e) {
     $_SESSION['error']['msg'] = $e->getMessage();
