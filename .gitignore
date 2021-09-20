@@ -79,3 +79,8 @@ Thumb.db
 
 # その他
 images/
+*.txt
+*.csv
+review/
+sample/
+share/

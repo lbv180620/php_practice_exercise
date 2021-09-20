@@ -34,4 +34,9 @@ try {
     $_SESSION['err']['msg'] = $msg;
     header('Location: ./', true, 301);
     exit;
+} catch (Error $e) {
+    $msg = $e->getMessage();
+    $_SESSION['err']['msg'] = $msg;
+    header('Location: ./', true, 301);
+    exit;
 }

@@ -162,3 +162,6 @@ volume-ls:
 	docker volume ls
 volume-inspect:
 	docker volume inspect $(rep)_db-store
+
+share:
+	cp ./backend/share/* /vagrant_data/
